@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" rel="stylesheet">
+
+    <title>Бланк доктору</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <h1 class="cp fs60 fwbold">Информация о заказе</h1>
+            <div class="textInput">
+                <h2 class="cg fs40 fw400 pl">Организация</h2>
+                <input class="cg fs47 fw300 plch" type="text" placeholder="Название">
+            </div>
+            <div class="textInput">
+                <h2 class="cg fs40 fw400 pl">Врач *</h2>
+                <input class="cg fs47 fw300 plch" id="doctor" type="text" placeholder="Ф.И.О.">
+            </div>
+            <div class="textInput">
+                <h2 class="cg fs40 fw400 pl">Пациент *</h2>
+                <input class="cg fs47 fw300 plch req" id="patient" type="text" placeholder="Фамилия">
+            </div>
+            <h3 class="cg fs40 fw300">* - поля, обязательные для заполнения</h3>
+            <h1 class="cp fs60 fwbold">Оценка готового изделия</h1>
+            <h2 class="cp fs40 fw300">Дорогой доктор! Отметьте, пожалуйста, что не соответствовало Вашим ожиданиям.</h2>
+            <ul>
+                <li>
+                    <div class="li">
+                        <span class="key cg fs33 fw300">несоответствие модели <br/>(прилегание, баланс)</span>
+                        <span><input class="value" id="1" type="checkbox" />
+                    <label class="cbxx" for="1">
+                <div class="flip">
+                    <div class="front"></div>
+                    <div class="back">
+                      <svg width="16" height="14" viewBox="0 0 16 14">
+                        <path d="M2 8.5L6 12.5L14 1.5"></path>
+                      </svg>
+                    </div>
+                  </div>
+                    </label></span>
+                    </div>
+                </li>
+                <li>
+                    <div class="li"> <span class="key cg fs33 fw300">отсутствие пути введения или его неоднозначность</span>
+                        <span><input class="value" id="2" type="checkbox" />
+                    <label class="cbxx" for="2">
+                <div class="flip">
+                    <div class="front"></div>
+                    <div class="back">
+                      <svg width="16" height="14" viewBox="0 0 16 14">
+                        <path d="M2 8.5L6 12.5L14 1.5"></path>
+                      </svg>
+                    </div>
+                  </div>
+                    </label></span></div>
+                </li>
+                <li>
+                    <div class="li"> <span class="key cg fs33 fw300">общий внешний вид</span>
+                        <span><input class="value" id="3" type="checkbox" />
+                    <label class="cbxx" for="3">
+                <div class="flip">
+                    <div class="front"></div>
+                    <div class="back">
+                      <svg width="16" height="14" viewBox="0 0 16 14">
+                        <path d="M2 8.5L6 12.5L14 1.5"></path>
+                      </svg>
+                    </div>
+                  </div>
+                    </label></span></div>
+                </li>
+            </ul>
+            <div class="twocol">
+                <div class="col">
+                    <p class="gbox fs36 fwbold">Пластмассовые элементы</p>
+                    <ul>
+                        <li>
+                            <div class="li">
+                                <span class="key cg fs33 fw300">неаккуратные границы</span>
+                                <span>
+                                    <input class="value" id="4" type="checkbox" />
+                    <label class="cbxx" for="4">
+                <div class="flip">
+                    <div class="front"></div>
+                    <div class="back">
+                      <svg width="16" height="14" viewBox="0 0 16 14">
+                        <path d="M2 8.5L6 12.5L14 1.5"></path>
+                      </svg>
+                    </div>
+                  </div>
+                    </label></span></div>
+                        </li>
+                        <li>
+                            <div class="li"><span class="key cg fs33 fw300">цвет / дизайн</span>
+                                <span><input class="value" id="5" type="checkbox" />
+                    <label class="cbxx" for="5">
+                <div class="flip">
+                    <div class="front"></div>
+                    <div class="back">
+                      <svg width="16" height="14" viewBox="0 0 16 14">
+                        <path d="M2 8.5L6 12.5L14 1.5"></path>
+                      </svg>
+                    </div>
+                  </div>
+                    </label></span></div>
+                        </li>
+                        <li>
+                            <div class="li"><span class="key cg fs33 fw300">неаккуратная обработка (границ, распилов)</span>
+                                <span><input class="value" id="6" type="checkbox" />
+                    <label class="cbxx" for="6">
+                <div class="flip">
+                    <div class="front"></div>
+                    <div class="back">
+                      <svg width="16" height="14" viewBox="0 0 16 14">
+                        <path d="M2 8.5L6 12.5L14 1.5"></path>
+                      </svg>
+                    </div>
+                  </div>
+                    </label></span></div>
+                        </li>
+                        <li>
+                            <div class="li"><span class="key cg fs33 fw300">неправильное расположение функциональных элементов</span>
+                                <span><input class="value" id="7" type="checkbox" />
+                    <label class="cbxx" for="7">
+                <div class="flip">
+                    <div class="front"></div>
+                    <div class="back">
+                      <svg width="16" height="14" viewBox="0 0 16 14">
+                        <path d="M2 8.5L6 12.5L14 1.5"></path>
+                      </svg>
+                    </div>
+                  </div>
+                    </label></span></div>
+                        </li>
+                        <li>
+                            <div class="li"><span class="key cg fs33 fw300">неудовлетворяющий внешний вид</span>
+                                <span><input class="value" id="8" type="checkbox" />
+                    <label class="cbxx" for="8">
+                <div class="flip">
+                    <div class="front"></div>
+                    <div class="back">
+                      <svg width="16" height="14" viewBox="0 0 16 14">
+                        <path d="M2 8.5L6 12.5L14 1.5"></path>
+                      </svg>
+                    </div>
+                  </div>
+                    </label></span></div>
+                        </li>
+                    </ul>
+                    <p class="gbox fs36 fwbold">Термоформированные аппараты</p>
+                    <ul>
+                        <li>
+                            <div class="li"><span class="key cg fs33 fw300">поры</span>
+                                <span><input class="value" id="9" type="checkbox" />
+                    <label class="cbxx" for="9">
+                <div class="flip">
+                    <div class="front"></div>
+                    <div class="back">
+                      <svg width="16" height="14" viewBox="0 0 16 14">
+                        <path d="M2 8.5L6 12.5L14 1.5"></path>
+                      </svg>
+                    </div>
+                  </div>
+                    </label></span></div>
+                        </li>
+                        <li>
+                            <div class="li"><span class="key cg fs33 fw300">неотполированные края</span>
+                                <span><input class="value" id="10" type="checkbox" />
+                    <label class="cbxx" for="10">
+                <div class="flip">
+                    <div class="front"></div>
+                    <div class="back">
+                      <svg width="16" height="14" viewBox="0 0 16 14">
+                        <path d="M2 8.5L6 12.5L14 1.5"></path>
+                      </svg>
+                    </div>
+                  </div>
+                    </label></span></div>
+                        </li>
+                        <li>
+                            <div class="li"><span class="key cg fs33 fw300">плохое прилегание</span>
+                                <span><input class="value" id="11" type="checkbox" />
+                    <label class="cbxx" for="11">
+                <div class="flip">
+                    <div class="front"></div>
+                    <div class="back">
+                      <svg width="16" height="14" viewBox="0 0 16 14">
+                        <path d="M2 8.5L6 12.5L14 1.5"></path>
+                      </svg>
+                    </div>
+                  </div>
+                    </label></span></div>
+                        </li>
+                        <li>
+                            <div class="li"><span class="key cg fs33 fw300">плохая фиксация</span>
+                                <span><input class="value" id="12" type="checkbox" />
+                    <label class="cbxx" for="12">
+                <div class="flip">
+                    <div class="front"></div>
+                    <div class="back">
+                      <svg width="16" height="14" viewBox="0 0 16 14">
+                        <path d="M2 8.5L6 12.5L14 1.5"></path>
+                      </svg>
+                    </div>
+                  </div>
+                    </label></span></div>
+                        </li>
+                    </ul>
+                    <p class="gbox fs36 fwbold">Пайка</p>
+                    <ul>
+                        <li>
+                            <div class="li"><span class="key cg fs33 fw300">неравномерность шва, поры</span>
+                                <span><input class="value" id="13" type="checkbox" />
+                    <label class="cbxx" for="13">
+                <div class="flip">
+                    <div class="front"></div>
+                    <div class="back">
+                      <svg width="16" height="14" viewBox="0 0 16 14">
+                        <path d="M2 8.5L6 12.5L14 1.5"></path>
+                      </svg>
+                    </div>
+                  </div>
+                    </label></span></div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <p class="gbox fs36 fwbold">Металлические элементы</p>
+                    <ul>
+                        <li>
+                            <div class="li"><span class="key cg fs33 fw300">механические повреждения (спилы, сколы заломы, истончения)</span>
+                                <span><input class="value" id="14" type="checkbox" />
+                    <label class="cbxx" for="14">
+                <div class="flip">
+                    <div class="front"></div>
+                    <div class="back">
+                      <svg width="16" height="14" viewBox="0 0 16 14">
+                        <path d="M2 8.5L6 12.5L14 1.5"></path>
+                      </svg>
+                    </div>
+                  </div>
+                    </label></span></div>
+                        </li>
+                    </ul>
+                    <p class="cp fs33 fw400">ПРОВОЛОЧНЫЕ</p>
+                    <ul>
+                        <li>
+                            <div class="li"><span class="key cg fs33 fw300">неправильное расположение</span>
+                                <span><input class="value" id="15" type="checkbox" />
+                    <label class="cbxx" for="15">
+                <div class="flip">
+                    <div class="front"></div>
+                    <div class="back">
+                      <svg width="16" height="14" viewBox="0 0 16 14">
+                        <path d="M2 8.5L6 12.5L14 1.5"></path>
+                      </svg>
+                    </div>
+                  </div>
+                    </label></span></div>
+                        </li>
+                        <li>
+                            <div class="li"><span class="key cg fs33 fw300">не обеспечивают фиксацию/активацию</span>
+                                <span><input class="value" id="16" type="checkbox" />
+                    <label class="cbxx" for="16">
+                <div class="flip">
+                    <div class="front"></div>
+                    <div class="back">
+                      <svg width="16" height="14" viewBox="0 0 16 14">
+                        <path d="M2 8.5L6 12.5L14 1.5"></path>
+                      </svg>
+                    </div>
+                  </div>
+                    </label></span></div>
+                        </li>
+                    </ul>
+                    <p class="cp fs33 fw400">КОЛЬЦА</p>
+                    <ul>
+                        <li>
+                            <div class="li"><span class="key cg fs33 fw300">несоответствие размеров</span>
+                                <span><input class="value" id="17" type="checkbox" />
+                    <label class="cbxx" for="17">
+                <div class="flip">
+                    <div class="front"></div>
+                    <div class="back">
+                      <svg width="16" height="14" viewBox="0 0 16 14">
+                        <path d="M2 8.5L6 12.5L14 1.5"></path>
+                      </svg>
+                    </div>
+                  </div>
+                    </label></span></div>
+                        </li>
+                        <li>
+                            <div class="li"><span class="key cg fs33 fw300">не подогнаны по высоте (при наличиивспомогательной модели)</span>
+                                <span><input class="value" id="18" type="checkbox" />
+                    <label class="cbxx" for="18">
+                <div class="flip">
+                    <div class="front"></div>
+                    <div class="back">
+                      <svg width="16" height="14" viewBox="0 0 16 14">
+                        <path d="M2 8.5L6 12.5L14 1.5"></path>
+                      </svg>
+                    </div>
+                  </div>
+                    </label></span></div>
+                        </li>
+                    </ul>
+                    <p class="gbox fs36 fwbold">Винты</p>
+                    <ul>
+                        <li>
+                            <div class="li"><span class="key cg fs33 fw300">нерабочее состояние</span>
+                                <span><input class="value" id="19" type="checkbox" />
+                    <label class="cbxx" for="19">
+                <div class="flip">
+                    <div class="front"></div>
+                    <div class="back">
+                      <svg width="16" height="14" viewBox="0 0 16 14">
+                        <path d="M2 8.5L6 12.5L14 1.5"></path>
+                      </svg>
+                    </div>
+                  </div>
+                    </label></span></div>
+                        </li>
+                        <li>
+                            <div class="li">
+                                <span class="key cg fs33 fw300">неправильное расположение (винта, "усов")</span>
+                                <span>
+                                    <input class="value" id="20" type="checkbox"/>
+                    <label class="cbxx" for="20">
+                <div class="flip">
+                    <div class="front"></div>
+                    <div class="back">
+                      <svg width="16" height="14" viewBox="0 0 16 14">
+                        <path d="M2 8.5L6 12.5L14 1.5"></path>
+                      </svg>
+                    </div>
+                  </div>
+                    </label></span></div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <h2 class="cp fs40 fw400">Комментарии:</h2>
+            <div class="cg fs47 fw300 kom plch" id="comment" contenteditable="true">
+                Введите текст
+            </div>
+            <div id="agreeBox">
+                <span>
+                    <input class="value" id="agree" type="checkbox"/>
+                    <label class="cbxx" for="agree">
+                        <div class="flip">
+                            <div class="front"></div>
+                            <div class="back">
+                                <svg width="16" height="14" viewBox="0 0 16 14">
+                                    <path d="M2 8.5L6 12.5L14 1.5"></path>
+                                </svg>
+                            </div>
+                        </div>
+                    </label>
+                </span>
+                <span class="cg fs33 fw400">Я согласен на обработку </br>персональных данных</span>
+            </div>
+            <h3 class="cp fs49 fwbold">Спасибо! Благодаря Вам мы становимся лучше.</h3>
+            <button class="btn fs40 fwbold" onclick="send()">Отправить</button>
+        </div>
+    </div>
+    <div class="b-popup fs60 cp fwbold" id="b-popup">
+        <div class="b-popup-content">
+            Информация успешно сохранена! Спасибо!
+        </div>
+    </div>
+    <script src="myBlank.js"></script>
+</body>
+
+</html>
